@@ -1,7 +1,6 @@
 package org.sqli.datacleancode.data.entities;
 
 import lombok.*;
-import org.sqli.datacleancode.data.TechnologyEnum;
 
 import javax.persistence.*;
 

@@ -1,6 +1,6 @@
 package org.sqli.datacleancode.data.entities.inheritence.exp03;
 
-import org.sqli.datacleancode.data.TechnologyEnum;
+import org.sqli.datacleancode.data.entities.TechnologyEnum;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;

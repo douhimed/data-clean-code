@@ -5,7 +5,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import org.sqli.datacleancode.data.TechnologyEnum;
+import org.sqli.datacleancode.data.entities.TechnologyEnum;
 import org.sqli.datacleancode.data.entities.Student;
 
 import java.util.List;

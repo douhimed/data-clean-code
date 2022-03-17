@@ -6,6 +6,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.*;
 import org.sqli.datacleancode.data.dao.StudentRepository;
 import org.sqli.datacleancode.data.entities.Student;
+import org.sqli.datacleancode.data.utilities.exceptions.StudentException;
 
 import java.util.List;
 
@@ -36,7 +37,8 @@ public class StudentController {
 
     @GetMapping("/find/{id}")
     public Student getByIdUsingFind(@PathVariable long id) {
-        return this.studentRepository.findById(id).orElse(null);
+        return this.studentRepository.findById(id)
+                .orElseThrow(() -> new StudentException("Student with id " + id + " not existe"));
     }
 
 

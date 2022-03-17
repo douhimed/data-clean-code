@@ -8,6 +8,7 @@ import org.sqli.datacleancode.data.dao.CourseDao;
 import org.sqli.datacleancode.data.dao.InstructorDao;
 import org.sqli.datacleancode.data.dao.StudentRepository;
 import org.sqli.datacleancode.data.entities.Student;
+import org.sqli.datacleancode.data.entities.TechnologyEnum;
 import org.sqli.datacleancode.data.entities.relations.Course;
 import org.sqli.datacleancode.data.entities.relations.Instructor;
 import org.sqli.datacleancode.data.entities.relations.InstructorDetail;
