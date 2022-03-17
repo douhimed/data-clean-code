@@ -5,28 +5,23 @@ import org.sqli.datacleancode.data.TechnologyEnum;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "student")
+/**
+ *
+ * add the entity & table annotation
+ *
+ * add the columns and the id with identity strategy
+ *
+ */
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class Student {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @Column(name = "name")
     private String name;
-
-    @Column(name = "age")
     private int age;
-
-    @Column(name = "present")
     private boolean present;
-
-    @Enumerated(EnumType.STRING)
     private TechnologyEnum technology;
 
     @Override

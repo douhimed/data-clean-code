@@ -4,8 +4,12 @@ import lombok.*;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "course")
+/**
+ *
+ * entity + table
+ * mappe the instructor ManyToOne/JoinColumn
+ *
+ */
 @Getter
 @Setter
 @NoArgsConstructor
@@ -13,16 +17,8 @@ import javax.persistence.*;
 @Builder
 public class Course {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
     private Long id;
-
-    @Column(name = "title")
     private String title;
-
-    @ManyToOne
-    @JoinColumn(name = "instructor_id")
     private Instructor instructor;
 
     @Override

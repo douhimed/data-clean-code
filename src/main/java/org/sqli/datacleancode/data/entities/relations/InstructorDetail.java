@@ -9,8 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name="instructor_detai_one_to_one")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -19,12 +17,7 @@ import javax.persistence.Table;
 @ToString
 public class InstructorDetail {
 
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="id")
 	private int id;
-	
-	@Column(name="hobby")
 	private String hobby;
 		
 }

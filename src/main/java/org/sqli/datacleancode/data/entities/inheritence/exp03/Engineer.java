@@ -7,8 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 
-@Entity(name = "engineer_singleclass")
-@DiscriminatorValue("E")
 public class Engineer  extends User {
 
     @Enumerated(EnumType.STRING)

@@ -6,7 +6,6 @@ import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 
-@Entity(name = "engineer_perclass")
 public class Engineer  extends User {
 
     @Enumerated(EnumType.STRING)
